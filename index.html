@@ -1,95 +1,194 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Stiamo lavorando per voi</title>
-		<link href="https://fonts.googleapis.com/css2?family=Monofett&family=Hi+Melody&display=swap" rel="stylesheet">
-		<style type="text/css">
-		body{
-			background-color: white;
-			background-attachment: fixed;
-		}
-		.complex{
-			position: center;
-			margin: 2px;
-			padding: 0px;
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		}
-		.photo img{
-			margin-top: 8%;
-			padding: 0;
-			width: 36%;
-		}
-		.container{
-			width: 45%;
-			position: static;
-			margin-top: 0px;
-			padding: 2px;
-			color: #0b4975;
-			font-family: 'Monofett', cursive;
-			letter-spacing: 2px;
-			border-bottom: 5px solid #0b4975;
-			border-radius: 5px;
-			animation: effect 3s infinite;
-			animation-delay: 1s: 
-		}
-		.container p{
-			position: static;
-			margin: 0px;
-			padding: 2px;
-			text-transform: uppercase;
-			font-size: 55px;
-		}
-		.text{
-			position: relative;
-			width: 20%;
-			font-family: 'Hi Melody', cursive;
-			margin-top: 15px;
-			margin-bottom: 0;
-			text-align: center;
-			letter-spacing: 3px;
-			color: black; 
-			animation: txt 4s infinite;
-		}
-		.dev{
-			width: 20%;
-			margin: 0;
-			padding: 0;
-			text-align: right;
-			font-family: 'Ubuntu Mono', monospace;
-			position: fixed;
-			left: 78%;
-			bottom: 0;
-			color: #0b4975;
-		}
-		@keyframes effect{
-			0%{color: #0b4975 ;}
-			35%{color: black; text-shadow: 0px 0px 10px #0b4975; border-bottom: 5px solid #0b4975; border-top: none; box-shadow: none;}
-			70%{padding: 1px; color: white; text-shadow: 0px -7px 3px #0b4975; border-top: 5px solid #0b4975; border-bottom: none; box-shadow: black 0px 0px 1px inset;}
-		}
-		@keyframes txt{
-			0%{color: black; left: 0px; top: 0px;}
-			25%{-ms-transform: skewX(-15deg); transform: skewX(-15deg); left: -250px; right: 0px; text-shadow: -3px 0px 3px black;}
-			50%{left: 0px; right: 0px; text-shadow: none;}
-			75%{color: #0b4975; left: 250px; -ms-transform: skewX(15deg); transform: skewX(15deg); text-shadow: 3px 0px 3px black; }
-			100%{color: #0b4975; left: 0px; right: 0px;}
-		}
-		</style>
-	</head>
-	<body>
-		<center>
-		<div class="photo">
-			<img src="GIF/clock.gif">
-		</div>
-	  <div class="complex">
-		<div class="container">
-			<p>maintenance</p>
-		</div>
-		<div class="text">
-			<h1>
-				Presto online...<br>
-			</h1>
-		</div>
-	  </div>
-		<!-- footer -->
-	</body>
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Dott. Claudio Borsani</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Services Section</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Dott. Claudio Borsani</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Chi sono</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Servizi</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contattami</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Dott.<br> <span class="home__title-color">Claudio Borsani </h1> <br>  <h2 class="about__subtitle"> Ingegneria Informatica Industriale </h2></span>
+
+                    <a href="#contact" class="button">Richiedi una consulenza</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/claudio-borsani-399086185/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/claudiobors" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+              
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">Chi Sono</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/prefil1.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Sono Claudio Borsani,</h2>
+                        <p class="about__text"> 
+
+                        Da diversi anni lavoro nel mondo dell'informatica a supporto di piccole e medie imprese, con la convinzione che, innovazione e tecnologia siano fondamentali oggi per rimanere competitivi in ogni settore del mercato. <br><br>
+                        
+                       La mia esperienza spazia dalla Creazione Software, all'assistenza Hardware personalizzata, con un importante attenzione alle reali esigenze del cliente; si offrono inoltre servizi di consulenza anche nell'ambito dell' Informatica Industriale, con la progettazione e lo sviluppo di soluzioni ad Hoc per il Monitoraggio, il Controllo e la Reportistica deiProcessi.
+                    </p>           
+
+                    </div>                                   
+                </div>
+            </section>
+
+           
+            <section class="about section " id="skills">
+                <div class="row">
+                  <h2 class="section-title">Servizi Offerti</h2>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fa-brands fa-uncharted"></i>
+                      </div>
+                      <h3>Sviluppo Software</h3>
+                      <p>
+                        Si sviluppano Software personalizzati, multipiattaforma, in locale ed in Cloud, secondo le specifiche del cliente.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fa-sharp fa-solid fa-microchip"></i>
+                      </div>
+                      <h3>Assistenza Hardware</h3>
+                      <p>
+                        Diagnostica e Riparazione Guasti su dispositivi elettronici, Assemblaggio e Revamping PC, Manutenzione e Recupero Dati, Progettazione e Sviluppo di prodotti Hardware Personalizzati.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fa-solid fa-industry-windows"></i>
+                      </div>
+                      <h3>Informatica Industriale</h3>
+                      <p>
+                        Interconnessioni con Macchinari, Sviluppo connettori software per Protocolli Industiali e Gestionali, Ottimizzazione e Digitalizzazione dei processi, Consulenza Infrastrutture di Rete.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fa-solid fa-browser"></i>
+                      </div>
+                      <h3>Progettazione Siti Web - eCommerce</h3>
+                      <p>
+                       Progettazione e Sviluppo di siti Web Statici e Dinamici, esperienza con i principali CMS sul mercato, Analisi SEO, Grafica WEB, Marketing Digitale.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fa-solid fa-cube"></i>
+                      </div>
+                      <h3>Disegno CAD e Stampa 3D</h3>
+                      <p>
+                        Creazione e prototipazione di componenti tramite disegno CAD e stampa 3D.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <div class="icon-wrapper">
+                        <i class="fa-solid fa-database"></i>
+                      </div>
+                      <h3>Reportistica e Analisi dei Dati</h3>
+                      <p>
+                        Stesura di Analisi e Report dinamici, integrazione basi di dati preesistenti, collegamento con API, Machine Learning per l'analisi delle informazioni.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+       <!--===== CONTACT =====-->
+       <section class="contact section" id="contact">
+        <h2 class="section-title">Contattami</h2>
+
+        <div class="contact__container bd-grid">
+            <form action="https://formsubmit.co/info@cborsani.it" method="POST" class="contact__form">
+                <form action="" class="contact__form">
+                <input type="text" placeholder="Nome" class="contact__input" name="name" required>
+                <input type="email" placeholder="Email" class="contact__input" name="email" required>
+                <textarea name="" placeholder="La tua richiesta" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <input type="submit" value="Invia il messaggio" class="contact__button button">
+            </form>
+        </div>
+    </section>
+</main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Dott. Claudio Borsani</p>
+
+            <p class="footer__copy">&#169; Claudio Borsani - 2023 -  All rigths reserved</p>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
