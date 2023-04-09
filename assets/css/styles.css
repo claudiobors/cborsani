@@ -9,7 +9,7 @@
   /* HSL color mode */
   --hue-color: 210;
   --first-color: hsl(var(--hue-color), 60%, 40%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --second-color: hsl(var(--hue-color), 56%, 20%);
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -104,6 +104,10 @@ img {
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+}
+
+.new-grid {
+  max-width: 1024px;
 }
 
 .l-header {
@@ -346,25 +350,24 @@ img {
 
 /* ===== WORK =====*/
 .work__container {
-  row-gap: 2rem;
+  row-gap: 3rem;
+  padding: 5%;
 }
 work__container bd-grid{
     hover {
-  background-color: yellow;
+  background-color: blue;
 }
 }
-/*
-.top-part{
-    backface-visibility: visible;
-    transition-property: all;
-    box-decoration-break: slice;
-}
-*/
 
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  max-height: 200px;
   border-radius: .5rem;
-  overflow: hidden;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .work__img img {
@@ -372,7 +375,7 @@ work__container bd-grid{
 }
 
 .work__img img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /* ===== CONTACT =====*/
@@ -468,7 +471,7 @@ work__container bd-grid{
     padding-top: 2rem;
   }
   .contact__form {
-    width: 360px;
+    width: 1024px;
     padding-top: 2rem;
   }
   .contact__container {
@@ -726,6 +729,15 @@ a.read_more:hover {
 
 }
 
+.service {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -748,7 +760,6 @@ a.read_more:hover {
 }
 
 p {
-  color:;
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
