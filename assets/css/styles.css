@@ -100,14 +100,14 @@ img {
 
 /*===== LAYOUT =====*/
 .bd-grid {
-  max-width: 1024px;
+  max-width: 1440px;
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
 
 .new-grid {
-  max-width: 1024px;
+  max-width: 1440px;
 }
 
 .l-header {
@@ -471,7 +471,7 @@ work__container bd-grid{
     padding-top: 2rem;
   }
   .contact__form {
-    width: 1024px;
+    width: 1440px;
     padding-top: 2rem;
   }
   .contact__container {
@@ -692,7 +692,7 @@ a.read_more:hover {
 
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
 
     .grid {
         grid-template-columns: 1fr;
@@ -803,4 +803,3 @@ p {
     max-width: 33.33%;
   }
 }
-
