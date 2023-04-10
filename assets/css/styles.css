@@ -727,6 +727,20 @@ a.read_more:hover {
         margin-top: 20px;
     }
 
+    .home__social-icon {
+      margin: var(--mb-2);
+    }
+
+    .about__subtitle {
+      font-size: var(--h2-font-size);
+      margin-bottom: var(--mb-4);
+    }
+
+    .home__title {
+      font-size: var(--big-font-size);
+      margin-bottom: 0;
+  }
+
 }
 
 .service {
